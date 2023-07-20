@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-body: linear-gradient(#807ECE, #8E7ECE);
+  --bg-calculator: #2D2A37;
+  --txt-color: #EBEBEB;
+  --bg-button-operators: #462878;
+  --bg-bt-equal: #7F45E2;
+  --txt-gray: #6B6B6B;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--bg-body);
+  height: 100vh;
+}
