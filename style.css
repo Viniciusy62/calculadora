@@ -6,24 +6,93 @@
 
 :root {
   font-size: 62.5%;
-  --bg-body: linear-gradient(#807ECE, #8E7ECE);
-  --bg-calculator: #2D2A37;
-  --txt-color: #EBEBEB;
-  --bg-button-operators: #462878;
-  --bg-bt-equal: #7F45E2;
-  --txt-gray: #6B6B6B;
+  --bg-body: linear-gradient(#807ece, #8e7ece);
+  --bg-calculator: #2d2a37;
+  --txt-color: #ebebeb;
+  --bg-bt-operators: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0.01%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #462878;
+  --bg-bt-others: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #2d2a37;
+  --bg-bt-equal: #7f45e2;
+  --txt-gray: #6b6b6b;
+  --box-shadow-calculator: 0px -4px 5px 0px rgba(0, 0, 0, 0.22) inset,
+    0px 6px 8px 0px rgba(255, 255, 255, 0.1) inset,
+    0px 8px 17px 0px rgba(0, 0, 0, 0.29), 0px 30px 30px 0px rgba(0, 0, 0, 0.26),
+    0px 68px 41px 0px rgba(0, 0, 0, 0.15),
+    0px 120px 48px 0px rgba(0, 0, 0, 0.04),
+    0px 188px 52px 0px rgba(0, 0, 0, 0.01), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --box-shadow-bt: 0px 2px 3px 0px rgba(255, 255, 255, 0.06) inset,
+    0px 0px 2px 0px rgba(0, 0, 0, 0.29), 0px 2px 4px 0px rgba(0, 0, 0, 0.26),
+    0px 4px 6px 0px rgba(0, 0, 0, 0.1), 0px 7px 7px 0px rgba(0, 0, 0, 0.04),
+    0px 11px 7px 0px rgba(0, 0, 0, 0.01);
 }
 
 body {
   font-size: 1.6rem;
   background: var(--bg-body);
   height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: 'Rubik', sans-serif;
 }
 
 main {
+  margin-top: -3rem;
   padding: 5.4rem 3.2rem 3.2rem;
   width: 35.6rem;
   height: 56.6rem;
   background: var(--bg-calculator);
-  /* display: grid; */
+  border-radius: 4.8rem;
+  box-shadow: var(--box-shadow-calculator);
+}
+
+table {
+  width: 100%;
+  color: var(--txt-color);
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+td {
+  margin: 0.6rem auto;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 5rem;
+
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+
+  display: grid;
+  place-content: center;
+}
+
+.bt-gray {
+  background: var(--bg-bt-others);
+  box-shadow: var(--box-shadow-bt);
+}
+
+.bt-purple {
+  background: var(--bg-bt-operators);
+  box-shadow: var(--box-shadow-bt);
+}
+
+.bt-equal {
+  background: var(--bg-bt-equal);
+  box-shadow: var(--box-shadow-bt);
+}
+
+.CE {
+  color: #975DFA;
 }
