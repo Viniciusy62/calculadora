@@ -19,3 +19,11 @@ body {
   background: var(--bg-body);
   height: 100vh;
 }
+
+main {
+  padding: 5.4rem 3.2rem 3.2rem;
+  width: 35.6rem;
+  height: 56.6rem;
+  background: var(--bg-calculator);
+  /* display: grid; */
+}
