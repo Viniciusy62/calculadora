@@ -52,6 +52,7 @@ main {
   background: var(--bg-calculator);
   border-radius: 4.8rem;
   box-shadow: var(--box-shadow-calculator);
+  color: var(--txt-color);
 }
 
 .container-header {
@@ -82,23 +83,22 @@ main {
 
 #screen-result {
   font-size: 3.6rem;
-  color: var(--txt-color);
 }
 
-table {
+.container-body {
   width: 100%;
-  color: var(--txt-color);
 }
 
-tr {
+.contain-line {
   display: flex;
   justify-content: space-between;
 }
 
-td {
+button {
   margin: 0.6rem auto;
   width: 6.4rem;
   height: 6.4rem;
+  border: .2rem solid var(--bg-calculator);
   border-radius: 5rem;
 
   text-align: center;
@@ -109,12 +109,14 @@ td {
   place-content: center;
 
   cursor: pointer;
-  transition: color .2s, transform .2s;
+  transition: color .2s, transform .2s, border .3s;
+  color: var(--txt-color);
 }
 
-td:hover {
+button:hover {
   color: #ffffff;
   transform: scale(1.1);
+  border: .1rem solid #7f45e2;
 }
 
 .bt-gray {
@@ -135,6 +137,3 @@ td:hover {
 .CE {
   color: #975dfa;
 }
-
-
-/* TODO: animation buttons */

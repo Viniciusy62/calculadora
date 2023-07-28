@@ -13,6 +13,7 @@
 
 <body>
   <main>
+
     <div class="container-header">
       <span id="screen-operations">1 + 1</span>
       <div class="container-result">
@@ -22,52 +23,58 @@
         <span id="screen-result">2</span>
       </div>
     </div>
-    <table>
-      <tr>
-        <td class="bt-gray CE" id="bt-ce">CE</td>
-        <td class="bt-gray" id="bt-c">C</td>
-        <td class="bt-gray" id="bt-percentage">
+
+    <div class="container-body">
+      <div class="contain-line">
+        <button class="bt-gray CE" id="bt-ce">CE</button>
+        <button class="bt-gray" id="bt-c">C</button>
+        <button class="bt-gray" id="bt-percentage">
           <img src="./assets/percentage.svg" alt="Botão de porcentagem">
-        </td>
-        <td class="bt-purple" id="bt-divide">
+        </button>
+        <button class="bt-purple" id="bt-divide">
           <img src="./assets/divide.svg" alt="Botão de dividir">
-        </td>
-      </tr>
-      <tr>
-        <td class="bt-gray" id="num7">7</td>
-        <td class="bt-gray" id="num8">8</td>
-        <td class="bt-gray" id="num9">9</td>
-        <td class="bt-purple" id="bt-multiply">
+        </button">
+      </div>
+
+      <div class="contain-line">
+        <button class="bt-gray numbers" value="7">7</button>
+        <button class="bt-gray numbers" value="8">8</button>
+        <button class="bt-gray numbers" value="9">9</button>
+        <button class="bt-purple" id="bt-multiply">
           <img src="./assets/multiply.svg" alt="Botão de multiplicar">
-        </td>
-      </tr>
-      <tr>
-        <td class="bt-gray" id="num4">4</td>
-        <td class="bt-gray" id="num5">5</td>
-        <td class="bt-gray" id="num6">6</td>
-        <td class="bt-purple" id="bt-subtract">
+        </button>
+      </div>
+
+      <div class="contain-line">
+        <button class="bt-gray numbers" value="4">4</button>
+        <button class="bt-gray numbers" value="5">5</button>
+        <button class="bt-gray numbers" value="6">6</button>
+        <button class="bt-purple" id="bt-subtract">
           <img src="./assets/subtraction.svg" alt="Botão de subtração">
-        </td>
-      </tr>
-      <tr>
-        <td class="bt-gray" id="num1">1</td>
-        <td class="bt-gray" id="num2">2</td>
-        <td class="bt-gray" id="num3">3</td>
-        <td class="bt-purple" id="bt-sum">
+        </button>
+      </div>
+
+      <div class="contain-line">
+        <button class="bt-gray numbers" value="1">1</button>
+        <button class="bt-gray numbers" value="2">2</button>
+        <button class="bt-gray numbers" value="3">3</button>
+        <button class="bt-purple" id="bt-sum">
           <img src="./assets/sum.svg" alt="Botão de somar">
-        </td>
-      </tr>
-      <tr>
-        <td class="bt-gray" id="bt-sum-subtract">
+        </button>
+      </div>
+
+      <div class="contain-line">
+        <button class="bt-gray" id="bt-sum-subtract">
           <img src="./assets/sumSubtract.svg" alt="Botão de positivo e negativo">
-        </td>
-        <td class="bt-gray" id="num0">0</td>
-        <td class="bt-gray" id="bt-dot">,</td>
-        <td class="bt-equal" id="bt-equal">
+        </button>
+        <button class="bt-gray numbers" value="0">0</button>
+        <button class="bt-gray" id="bt-dot">,</button>
+        <button class="bt-equal" id="bt-equal">
           <img src="./assets/equal.svg" alt="Botão de igual">
-        </td>
-      </tr>
-    </table>
+        </button>
+      </div>
+    </div>
+
   </main>
 
   <script type="module" src="./js/main.js"></script>
